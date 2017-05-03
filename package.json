@@ -1,10 +1,10 @@
 {
-  "name": "servers",
+  "name": "nodethings",
   "version": "1.0.0",
   "description": "My base directory for making node.js applications.",
-  "main": "practicum1/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node./practicum1/index.js"
+    "start": "node./index.js"
   },
   "repository": {
     "type": "git",
