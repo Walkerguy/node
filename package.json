@@ -4,7 +4,7 @@
   "description": "My base directory for making node.js applications.",
   "main": "index.js",
   "scripts": {
-    "start": "node./index.js"
+    "test": "echo \"Error: no test specified\" && exit1"
   },
   "repository": {
     "type": "git",
