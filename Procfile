@@ -1,1 +1,1 @@
-web: node index.js
+web: node ./practicum1/index.js

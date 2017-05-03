@@ -2,10 +2,10 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(request, response) {
- response.send('Hello Avans!');
+ response.send('Hello Avans, GET request received!');
 })
 app.get('/about', function(request, response) {
- response.send('Written by <jouw naam hier invullen>');
+ response.send('Written by Bram');
 })
 app.post('/', function(request, response) {
  response.send('Hello Avans, POST request received!');
