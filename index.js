@@ -1,15 +1,26 @@
-var http = require('http');
+var express = require('express');
+var app = express();
+
+app.get('/', function(request, response) {
+ response.send('Hello Avans!');
+})
+app.get('/about', function(request, response) {
+ response.send('Written by <jouw naam hier invullen>');
+})
+app.post('/', function(request, response) {
+ response.send('Hello Avans, POST request received!');
+})
+app.put('/', function(request, response) {
+ response.send('Hello Avans, PUT request received!');
+})
+app.all('*', function(request, response) {
+ response.status(404);
+ response.send('404 - Not found');
+})
 
 
 
-http.createServer(function (request, response)
-{
-	console.log('Er was een request.');
-	response.writeHead(200,{'Content-Type': 'text/json'});
-	var json = JSON.stringify(
-	{
-		tekst: "Dit is de JSON!"
-	});
-	response.end(json);
-}).listen(process.env.PORT || 3000);
-console.log('De server luistert op port 80/3000.');
+
+app.listen(3000, function() {
+ console.log('Server app is listening on port 3000');
+})
