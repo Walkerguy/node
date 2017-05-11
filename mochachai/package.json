@@ -1,5 +1,5 @@
 {
-  "name": "nodethings",
+  "name": "mochachai",
   "version": "1.0.0",
   "description": "My base directory for making node.js applications.",
   "main": "index.js",
@@ -16,6 +16,15 @@
     "url": "https://github.com/Walkerguy/node/issues"
   },
   "homepage": "https://github.com/Walkerguy/node#readme",
+  "keywords": [
+    "mocha",
+    "chai"
+  ],
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.3.0"
+  },
   "dependencies": {
     "express": "^4.15.2"
   }
